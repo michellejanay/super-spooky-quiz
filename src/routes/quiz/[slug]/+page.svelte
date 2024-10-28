@@ -13,6 +13,7 @@
 	// change nextpage functionality?
 	// randomise questions
 	// spookify
+	//reset input
 
 	$: {
 		const slug = $page.params.slug;
@@ -40,6 +41,7 @@
 			checkAnswer(answer);
 			setTimeout(() => {
 				goto(nextPage);
+				answer = ''
 				result = '';
 			}, 2000);
 		}
