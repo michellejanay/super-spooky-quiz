@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base{
+    body{
+        @apply bg-gray-950;
+        @apply text-white;
+    }
+    main{
+        @apply flex;
+        @apply flex-col;
+        @apply min-h-dvh;
+        @apply items-center;
+        @apply justify-center;
+        @apply border;
+
+
+    }
+    button{
+        @apply py-2;
+        @apply px-4;
+        @apply bg-purple-600;
+        @apply text-white;
+        @apply my-2;
+        @apply rounded-md
+    }
+    section{
+        @apply h-8;
+      }
+}
