@@ -1,31 +1,54 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 @layer base{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
     body{
-        @apply bg-gray-950;
-        @apply text-white;
+        @apply bg-gray-950 text-white;
     }
+
     main{
-        @apply flex;
-        @apply flex-col;
-        @apply min-h-dvh;
-        @apply items-center;
-        @apply justify-center;
-        @apply border;
-
+        @apply flex flex-col min-h-dvh items-center justify-center m-2 p-2;
 
     }
-    button{
+
+    h1{
+        @apply text-center my-8 leading-snug;
+        font-family: "Rubik Wet Paint", system-ui;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 2em;
+    }
+
+    p,button,li{
+        font-size: 1.4em;
+    }
+
+    h2{
+        @apply text-center leading-snug;
+        font-size: 1.8em;
+    }
+
+    ul{
+        @apply my-8;
+    }
+
+    li{
         @apply py-2;
-        @apply px-4;
-        @apply bg-purple-600;
-        @apply text-white;
-        @apply my-2;
-        @apply rounded-md
     }
+
+    button{
+        @apply py-4 px-20 mt-6 bg-purple-600 text-white my-2 rounded-md;
+    }
+
     section{
-        @apply h-8;
+        @apply h-8 mt-4;
       }
 }
